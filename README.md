@@ -39,11 +39,33 @@ after the step above!
 6. Search for files that contain the text "Page has moved" or "No results" and
 redirect or remove these.
 
-7. Push the site up and, once rebuilt, run it through a link checker to make
+7. Search and replace the default Search API meta description tag of:
+
+```
+Display all the products that are available, using Search API
+```
+
+with:
+
+```
+Our catalog of handcrafted titanium wedding rings.
+```
+
+8. Search and remove the following two meta tags which are no longer valid:
+
+```
+<link rel="canonical" href="index.html" />
+```
+
+```
+ <link rel="shortlink" href="index.html" />
+```
+
+9. Push the site up and, once rebuilt, run it through a link checker to make
 sure there are no broken links. Also check links to the home page (the "home"
 tab and the logo) from various pages such as category pages, ring pages, the
 blog index and blog entries, and "about" pages, to ensure these were correctly
 fixed in step 5 above.
 
-8. Do a quick sanity check to make sure things like images are loading on
+10. Do a quick sanity check to make sure things like images are loading on
 category pages, ring pages, the blog index and blog entries, and "about" pages.
