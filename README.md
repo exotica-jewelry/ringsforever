@@ -58,7 +58,7 @@ Our catalog of handcrafted titanium wedding rings.
 ```
 
 ```
- <link rel="shortlink" href="index.html" />
+<link rel="shortlink" href="index.html" />
 ```
 
 9. Push the site up and, once rebuilt, run it through a link checker to make
