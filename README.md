@@ -7,9 +7,10 @@ This is a flat export of the last stage of the Drupal site for
 
 Should the site need to be regenerated, these are the steps:
 
-1. Spin up the full Drupal site with the post-retirement database. Note that
-even though search is disabled, the site requires Apache Solr and Redis to
-display category pages.
+1. Spin up the [full Drupal
+site](https://github.com/exotica-jewelry/archived-ringsforever-pantheon) with
+the post-retirement database (archived elsewhere). Note that even though search
+is disabled, the site requires Apache Solr and Redis to display category pages.
 
 2. Read through Lullabot's helpful [Sending a Drupal site into
 retirement](https://www.lullabot.com/articles/sending-drupal-site-retirement-using-httrack)
