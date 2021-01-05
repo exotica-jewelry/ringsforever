@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://test-titanium.pantheonsite.io/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:schema="http://schema.org/">
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:schema="http://schema.org/">
   <channel>
     <title>Titanium Wedding Rings, Handcrafted by Exotica Jewelry - We guarantee your ring will be made exactly to your specifications and will be free of any defects.</title>
-    <link>https://test-titanium.pantheonsite.io/</link>
+    <link>/</link>
     <description></description>
     <language>en</language>
      <atom:link href="/rss.xml" rel="self" type="application/rss+xml" />
       <item>
     <title>Titanium paradise</title>
-    <link>https://test-titanium.pantheonsite.io/blog/titanium-paradise</link>
+    <link>/blog/titanium-paradise</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
         &lt;a href=&quot;/blog/titanium-paradise&quot;&gt;Titanium paradise&lt;/a&gt;      &lt;/h2&gt;
       &lt;/header&gt;
-&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;schema:articleBody content:encoded&quot;&gt;&lt;p&gt;&lt;img alt=&quot;Echo 1&quot; class=&quot;align-right&quot; height=&quot;250&quot; src=&quot;https://titaniumringsforever.com/sites/default/files/blogs/echo.jpg&quot; width=&quot;250&quot; /&gt;We made the first ring in our wave series&amp;#8212;&lt;a href=&quot;https://test-titanium.pantheonsite.io/titanium-rings/waves/eastbourne-1&quot;&gt;Eastbourne &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;-a&lt;/a&gt;&amp;#8212;for our good friend Mitch Adair. He wanted a ring evocative of the famous “Great Wave” woodblock print by Katsushika&amp;nbsp;Hokusai.&lt;/p&gt;
-&lt;p&gt;A customer liked that ring but wanted to add a whale tail, so we created &lt;a href=&quot;https://test-titanium.pantheonsite.io/titanium-rings/whales/echo-1&quot;&gt;Echo &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;schema:articleBody content:encoded&quot;&gt;&lt;p&gt;&lt;img alt=&quot;Echo 1&quot; class=&quot;align-right&quot; height=&quot;250&quot; src=&quot;https://titaniumringsforever.com/sites/default/files/blogs/echo.jpg&quot; width=&quot;250&quot; /&gt;We made the first ring in our wave series&amp;#8212;&lt;a href=&quot;/titanium-rings/waves/eastbourne-1&quot;&gt;Eastbourne &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;-a&lt;/a&gt;&amp;#8212;for our good friend Mitch Adair. He wanted a ring evocative of the famous “Great Wave” woodblock print by Katsushika&amp;nbsp;Hokusai.&lt;/p&gt;
+&lt;p&gt;A customer liked that ring but wanted to add a whale tail, so we created &lt;a href=&quot;/titanium-rings/whales/echo-1&quot;&gt;Echo &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span rel=&quot;schema:url&quot; resource=&quot;/blog/titanium-paradise&quot; class=&quot;rdf-meta element-hidden&quot;&gt;&lt;/span&gt;&lt;span property=&quot;schema:name&quot; content=&quot;Titanium paradise&quot; class=&quot;rdf-meta element-hidden&quot;&gt;&lt;/span&gt;</description>
      <pubDate>Thu, 03 Jul 2014 00:51:55 +0000</pubDate>
  <dc:creator>Sandy Boothe</dc:creator>
@@ -22,7 +22,7 @@
   </item>
   <item>
     <title>How to get a stuck ring off your finger</title>
-    <link>https://test-titanium.pantheonsite.io/blog/how-get-stuck-ring-your-finger</link>
+    <link>/blog/how-get-stuck-ring-your-finger</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
@@ -35,7 +35,7 @@
   </item>
   <item>
     <title>Western heritage meets the space age </title>
-    <link>https://test-titanium.pantheonsite.io/blog/western-heritage-meets-space-age</link>
+    <link>/blog/western-heritage-meets-space-age</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
@@ -48,7 +48,7 @@
   </item>
   <item>
     <title>Is a titanium ring really safe to wear?</title>
-    <link>https://test-titanium.pantheonsite.io/blog/titanium-ring-really-safe-wear</link>
+    <link>/blog/titanium-ring-really-safe-wear</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
@@ -61,7 +61,7 @@
   </item>
   <item>
     <title>Making the rainbow solid</title>
-    <link>https://test-titanium.pantheonsite.io/blog/making-rainbow-solid</link>
+    <link>/blog/making-rainbow-solid</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
@@ -75,28 +75,28 @@
   </item>
   <item>
     <title>Making a snowy wedding ring</title>
-    <link>https://test-titanium.pantheonsite.io/blog/making-snowy-wedding-ring</link>
+    <link>/blog/making-snowy-wedding-ring</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
         &lt;a href=&quot;/blog/making-snowy-wedding-ring&quot;&gt;Making a snowy wedding ring&lt;/a&gt;      &lt;/h2&gt;
       &lt;/header&gt;
-&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;schema:articleBody content:encoded&quot;&gt;&lt;p&gt;&lt;img alt=&quot;The Ice Hotel in Sweden&quot; height=&quot;431&quot; src=&quot;https://test-titanium.pantheonsite.io/sites/default/files/blogs/icehotel.jpg&quot; width=&quot;620&quot; /&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span rel=&quot;schema:url&quot; resource=&quot;/blog/making-snowy-wedding-ring&quot; class=&quot;rdf-meta element-hidden&quot;&gt;&lt;/span&gt;&lt;span property=&quot;schema:name&quot; content=&quot;Making a snowy wedding ring&quot; class=&quot;rdf-meta element-hidden&quot;&gt;&lt;/span&gt;</description>
+&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;schema:articleBody content:encoded&quot;&gt;&lt;p&gt;&lt;img alt=&quot;The Ice Hotel in Sweden&quot; height=&quot;431&quot; src=&quot;/sites/default/files/blogs/icehotel.jpg&quot; width=&quot;620&quot; /&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span rel=&quot;schema:url&quot; resource=&quot;/blog/making-snowy-wedding-ring&quot; class=&quot;rdf-meta element-hidden&quot;&gt;&lt;/span&gt;&lt;span property=&quot;schema:name&quot; content=&quot;Making a snowy wedding ring&quot; class=&quot;rdf-meta element-hidden&quot;&gt;&lt;/span&gt;</description>
      <pubDate>Wed, 21 Aug 2013 04:50:58 +0000</pubDate>
  <dc:creator>Sandy Boothe</dc:creator>
  <guid isPermaLink="false">911 at https://test-titanium.pantheonsite.io</guid>
   </item>
   <item>
     <title>Little cabin in the (titanium) woods</title>
-    <link>https://test-titanium.pantheonsite.io/blog/little-cabin-titanium-woods</link>
+    <link>/blog/little-cabin-titanium-woods</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
         &lt;a href=&quot;/blog/little-cabin-titanium-woods&quot;&gt;Little cabin in the (titanium) woods&lt;/a&gt;      &lt;/h2&gt;
       &lt;/header&gt;
 &lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;schema:articleBody content:encoded&quot;&gt;&lt;p&gt;We’re fortunate to live in a gorgeous area with mountains close by in several directions. One of our first “theme” rings featured a carved mountain range encircling the ring, much like the mountains near us.&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&quot;image&quot;&gt;&lt;img alt=&quot;Montana 2&quot; height=&quot;500&quot; src=&quot;https://test-titanium.pantheonsite.io/sites/default/files/wysiwyg_imageupload/2/montana-2_4_0.jpg&quot; width=&quot;500&quot; /&gt;&lt;br /&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://test-titanium.pantheonsite.io/titanium-rings/mountains/montana-2&quot;&gt;Montana &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/a&gt;&lt;/figcaption&gt;&lt;br /&gt;
+&lt;p&gt;&lt;figure class=&quot;image&quot;&gt;&lt;img alt=&quot;Montana 2&quot; height=&quot;500&quot; src=&quot;/sites/default/files/wysiwyg_imageupload/2/montana-2_4_0.jpg&quot; width=&quot;500&quot; /&gt;&lt;br /&gt;
+&lt;figcaption&gt;&lt;a href=&quot;/titanium-rings/mountains/montana-2&quot;&gt;Montana &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/a&gt;&lt;/figcaption&gt;&lt;br /&gt;
 &lt;/figure&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span rel=&quot;schema:url&quot; resource=&quot;/blog/little-cabin-titanium-woods&quot; class=&quot;rdf-meta element-hidden&quot;&gt;&lt;/span&gt;&lt;span property=&quot;schema:name&quot; content=&quot;Little cabin in the (titanium) woods&quot; class=&quot;rdf-meta element-hidden&quot;&gt;&lt;/span&gt;</description>
      <pubDate>Sun, 16 Sep 2012 03:30:48 +0000</pubDate>
  <dc:creator>Sandy Boothe</dc:creator>
@@ -104,7 +104,7 @@
   </item>
   <item>
     <title>What should we engrave in our rings?</title>
-    <link>https://test-titanium.pantheonsite.io/blog/what-should-we-engrave-our-rings</link>
+    <link>/blog/what-should-we-engrave-our-rings</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
@@ -117,7 +117,7 @@
   </item>
   <item>
     <title>Titanium rings with formulas and equations</title>
-    <link>https://test-titanium.pantheonsite.io/blog/titanium-rings-formulas-equations</link>
+    <link>/blog/titanium-rings-formulas-equations</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
@@ -131,7 +131,7 @@
   </item>
   <item>
     <title>What do butterflies, golf clubs, deer tracks, wrenches, mountains, and tractors have in common? Answer: titanium wedding rings!</title>
-    <link>https://test-titanium.pantheonsite.io/blog/what-do-butterflies-golf-clubs-deer-tracks-wrenches-mountains-tractors-have-common-answer</link>
+    <link>/blog/what-do-butterflies-golf-clubs-deer-tracks-wrenches-mountains-tractors-have-common-answer</link>
     <description>
   &lt;header&gt;
           &lt;h2 class=&quot;field field-name-title-field field-type-text field-label-hidden&quot;&gt;
