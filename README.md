@@ -97,3 +97,5 @@ fixed in step 5 above.
 
 12. Do a quick sanity check to make sure things like images are loading on
 category pages, ring pages, the blog index and blog entries, and "about" pages.
+
+13. Ensure that HTTPS is still working properly.
