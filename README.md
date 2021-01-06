@@ -90,8 +90,10 @@ and with each of them, replace with the following regex pattern:
 $1\/public\/rings\/$2\/index\.jpg
 ```
 
-Note: `product_zoom` references do not need to be updated, because they will
-not have been changed by HTTrack in the first place.
+Notes: `product_zoom` references do not need to be updated, because they will
+not have been changed by HTTrack in the first place. Make sure you don't miss
+the root `index.html` file (home page). You may also want to do a sanity check
+and ensure that no references like `index/index.jpg` have been created.
 
 11. Push the site up and, once rebuilt, run it through a link checker to make
 sure there are no broken links. Also check links to the home page (the "home"
