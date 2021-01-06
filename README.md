@@ -27,7 +27,7 @@ httrack http://LOCALSITE -O OUTPUTDIR -N %h%p/%n/index%[page].%t -WqQ%v -s0 -%F 
 4. `cd` into the output folder and run:
 
 ```sh
-find . -name "*.html" -type f -print0 |   xargs -0 perl -i -pe "s/\/index.html/\//g"
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\/index.html/\//g"
 ```
 
 to fix links to individual `index.html` files.
@@ -65,8 +65,8 @@ Our catalog of handcrafted titanium wedding rings.
 the original Drupal files backups, since these files will not be caught by
 HTTrack.
 
-10. Update references to these files by searching for the following
-[regex](https://regex101.com/) patterns, respectively:
+10. Update references to these files by searching and replacing with the
+following [regex](https://regex101.com/) patterns:
 
 ```regex
 (frontpage_block)\/public\/rings\/([^.]+)\.jpg
