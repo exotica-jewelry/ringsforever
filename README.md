@@ -89,11 +89,10 @@ not have been changed by HTTrack in the first place. You may also want to do a
 sanity check and ensure that no references like `index/index.jpg` have been
 created.
 
-11. Fix lazyloading by copying the lazyloader image placeholder into
-`sites/default/files/lazyloader` directory and then running:
+11. Fix lazyloading by running:
 
 ```sh
-find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/sites\/all\/themes\/lazyloader-image-placeholder\//sites\/default\/files\/lazyloader\/image_placeholder\.gif/g"
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/src=\"sites\/all\/themes\/lazyloader-image-placeholder\/\"/src=\"data:image\/gif;base64,R0lGODlhAQABAIAAAAAAAP\/\/\/yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/g" && find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/src=\"\.\.\/sites\/all\/themes\/lazyloader-image-placeholder\/\"/src=\"data:image\/gif;base64,R0lGODlhAQABAIAAAAAAAP\/\/\/yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/g" && find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/src=\"\.\.\/\.\.\/sites\/all\/themes\/lazyloader-image-placeholder\/\"/src=\"data:image\/gif;base64,R0lGODlhAQABAIAAAAAAAP\/\/\/yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/g" && find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/src=\"\.\.\/\.\.\/\.\.\/sites\/all\/themes\/lazyloader-image-placeholder\/\"/src=\"data:image\/gif;base64,R0lGODlhAQABAIAAAAAAAP\/\/\/yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/g" && find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/src=\"\.\.\/\.\.\/\.\.\/\.\.\/sites\/all\/themes\/lazyloader-image-placeholder\/\"/src=\"data:image\/gif;base64,R0lGODlhAQABAIAAAAAAAP\/\/\/yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/g"
 ```
 
 12. Fix the home page logo:
