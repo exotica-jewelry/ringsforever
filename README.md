@@ -89,13 +89,19 @@ not have been changed by HTTrack in the first place. You may also want to do a
 sanity check and ensure that no references like `index/index.jpg` have been
 created.
 
-11. Push the site up and, once rebuilt, run it through a link checker to make
+11. Fix lazyloading:
+
+```sh
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/sites\/all\/themes\/lazyloader-image-placeholder\//sites\/default\/files\/lazyloader\/image_placeholder\.gif/g"
+```
+
+12. Push the site up and, once rebuilt, run it through a link checker to make
 sure there are no broken links. Also check links to the home page (the "home"
 tab and the logo) from various pages such as category pages, ring pages, the
 blog index and blog entries, and "about" pages, to ensure these were correctly
 fixed in step 5 above.
 
-12. Do a quick sanity check to make sure things like images are loading on
+13. Do a quick sanity check to make sure things like images are loading on
 category pages, ring pages, the blog index and blog entries, and "about" pages.
 
-13. Ensure that HTTPS is still working properly.
+14. Ensure that HTTPS is still working properly.
