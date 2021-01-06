@@ -68,32 +68,26 @@ HTTrack.
 10. Update references to these files by searching and replacing with the
 following [regex](https://regex101.com/) patterns:
 
-```regex
-(frontpage_block)\/public\/rings\/([^.]+)\.jpg
+```sh
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(frontpage_block\)\/public\/rings\/\([^.]+\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
 ```
 
-```regex
-(product_full)\/public\/rings\/([^.]+)\.jpg
+```sh
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(product_full\)\/public\/rings\/\([^.]+\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
 ```
 
-```regex
-(product_medium)\/public\/rings\/([^.]+)\.jpg
+```sh
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(product_medium\)\/public\/rings\/\([^.]+\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
 ```
 
-```regex
-(product_thumbnail)/public\/rings\/([^.]+)\.jpg
-```
-
-and with each of them, replace with the following regex pattern:
-
-```regex
-$1\/public\/rings\/$2\/index\.jpg
+```sh
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(product_thumbnail\)\/public\/rings\/\([^.]+\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
 ```
 
 Notes: `product_zoom` references do not need to be updated, because they will
-not have been changed by HTTrack in the first place. Make sure you don't miss
-the root `index.html` file (home page). You may also want to do a sanity check
-and ensure that no references like `index/index.jpg` have been created.
+not have been changed by HTTrack in the first place. You may also want to do a
+sanity check and ensure that no references like `index/index.jpg` have been
+created.
 
 11. Push the site up and, once rebuilt, run it through a link checker to make
 sure there are no broken links. Also check links to the home page (the "home"
