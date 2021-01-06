@@ -61,11 +61,43 @@ Our catalog of handcrafted titanium wedding rings.
 <link rel="shortlink" href="index.html" />
 ```
 
-9. Push the site up and, once rebuilt, run it through a link checker to make
+9. Copy over all the contents of `site/default/files/styles` directories from
+the original Drupal files backups, since these files will not be caught by
+HTTrack.
+
+10. Update references to these files by searching for the following
+[regex](https://regex101.com/) patterns, respectively:
+
+```regex
+(frontpage_block)\/public\/rings\/([^.]+)\.jpg
+```
+
+```regex
+(product_full)\/public\/rings\/([^.]+)\.jpg
+```
+
+```regex
+(product_medium)\/public\/rings\/([^.]+)\.jpg
+```
+
+```regex
+(product_thumbnail)/public\/rings\/([^.]+)\.jpg
+```
+
+and with each of them, replace with the following regex pattern:
+
+```regex
+$1\/public\/rings\/$2\/index\.jpg
+```
+
+Note: `product_zoom` references do not need to be updated, because they will
+not have been changed by HTTrack in the first place.
+
+11. Push the site up and, once rebuilt, run it through a link checker to make
 sure there are no broken links. Also check links to the home page (the "home"
 tab and the logo) from various pages such as category pages, ring pages, the
 blog index and blog entries, and "about" pages, to ensure these were correctly
 fixed in step 5 above.
 
-10. Do a quick sanity check to make sure things like images are loading on
+12. Do a quick sanity check to make sure things like images are loading on
 category pages, ring pages, the blog index and blog entries, and "about" pages.
