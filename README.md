@@ -62,7 +62,7 @@ Our catalog of handcrafted titanium wedding rings.
 ```
 
 9. Copy over all the contents of `site/default/files/styles` directories from
-the original Drupal files backups, since these files will not be caught by
+the original Drupal files backups, since these files will not all be caught by
 HTTrack. Consult the HTTrack-generated file `sites/default/files/skipped.log` to
 see a (likely incomplete) list of these files.
 
