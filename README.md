@@ -64,7 +64,12 @@ Our catalog of handcrafted titanium wedding rings.
 9. Copy over all the contents of `site/default/files/styles` directories from
 the original Drupal files backups, since these files will not all be caught by
 HTTrack. Consult the HTTrack-generated file `sites/default/files/skipped.log` to
-see a (likely incomplete) list of these files.
+see a (likely incomplete) list of these files. `cd` into each image directory
+and run:
+
+```sh
+../../../../../../../_scripts/move-images.sh
+```
 
 10. Update references to these files by searching and replacing with the
 following [regex](https://regex101.com/) patterns:
