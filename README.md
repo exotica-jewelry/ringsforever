@@ -135,6 +135,7 @@ https://github.com/exotica-jewelry/ringsforever/commit/2594bd83a9b4193fc6ad8e5fc
 https://github.com/exotica-jewelry/ringsforever/commit/4e8dbf5f6066d3de0deefe74bed555a44f39415f
 https://github.com/exotica-jewelry/ringsforever/commit/cfb4c4d716b3721aede9eeb203d4fd978f19cf3a
 https://github.com/exotica-jewelry/ringsforever/commit/94b62438cf3fbab18975bfc85dbea6df3f3effce
+https://github.com/exotica-jewelry/ringsforever/commit/17f531c076606b76d8d77c31034f99addf0636bc
 
 ### JS
 
