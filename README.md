@@ -63,25 +63,26 @@ Our catalog of handcrafted titanium wedding rings.
 
 9. Copy over all the contents of `site/default/files/styles` directories from
 the original Drupal files backups, since these files will not be caught by
-HTTrack.
+HTTrack. Consult the HTTrack-generated file `sites/default/files/skipped.log` to
+see a (likely incomplete) list of these files.
 
 10. Update references to these files by searching and replacing with the
 following [regex](https://regex101.com/) patterns:
 
 ```sh
-find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(frontpage_block\)\/public\/rings\/\([^.]+\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(frontpage_block\)\/public\/rings\/\([^\/]*?\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
 ```
 
 ```sh
-find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(product_full\)\/public\/rings\/\([^.]+\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(product_full\)\/public\/rings\/\([^\/]*?\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
 ```
 
 ```sh
-find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(product_medium\)\/public\/rings\/\([^.]+\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(product_medium\)\/public\/rings\/\([^\/]*?\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
 ```
 
 ```sh
-find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(product_thumbnail\)\/public\/rings\/\([^.]+\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
+find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\(product_thumbnail\)\/public\/rings\/\([^\/]*?\)\.jpg/$1\/public\/rings\/$2\/index\.jpg/g"
 ```
 
 Notes: `product_zoom` references do not need to be updated, because they will
