@@ -51,14 +51,10 @@ with:
 Our catalog of handcrafted titanium wedding rings.
 ```
 
-8. Search and remove the following two meta tags which are no longer valid:
+8. Search and remove two meta tags which are no longer valid:
 
-```
-<link rel="canonical" href="index.html" />
-```
-
-```
-<link rel="shortlink" href="index.html" />
+```sh
+find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/<link rel="canonical" href="index.html" \/>//g' && find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/<link rel="shortlink" href="index.html" \/>//g'
 ```
 
 9. Copy over all the contents of `site/default/files/styles` directories from
