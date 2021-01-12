@@ -12,22 +12,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [8.x, 10.x, 12.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '12'
     - run: npm install
     - run: npm run build --if-present
     - run: npm test
-      env:
-        CI: true
-    # Install NCC dependency
+    # Install ncc dependency
     - run: npm i -g @vercel/ncc
     - name: Check the health and certificate date for the specified URL(s)
       uses: padurean/https-certificate-expiry-health-check-action@v1.0.0
