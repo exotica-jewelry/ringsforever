@@ -6,7 +6,7 @@ on:
       - master
   schedule:
     # Every Monday at 2:00 AM.
-    - cron: '0 2 * * FRI'
+    - cron: '0 2 * * MON'
 
 jobs:
   build:
