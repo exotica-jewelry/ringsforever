@@ -1,0 +1,32 @@
+name: HTTPS checker
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    # Every Monday at 3:00 AM.
+    - cron: '0 3 * * MON'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check the health and certificate date for the specified URL(s)
+      uses: padurean/https-certificate-expiry-health-check-action@v1.0.0
+      with:
+        # Check the following URLs
+        url: https://titaniumringsforever.com|https://www.titaniumringsforever.com|http://titaniumringsforever.com|http://www.titaniumringsforever.com
+        # Verify TLS certificate, defaults to "no" (port and max-cert-days-left are only used if this is set to "yes")
+        check-cert: yes
+        # Port is only used with check-cert "yes", otherwise it can be included in the URL
+        port: 443
+        # Max number of days till cert expiration; if this value is reached, the check will fail
+        # (only used with check-cert "yes")
+        max-cert-days-left: 1
+        # Follow redirects, or just report success on 3xx reponse status codes
+        follow-redirect: no # Optional, defaults to "no"
+        # Fail this action after this many failed attempts
+        max-attempts: 3 # Optional, defaults to 1
+        # Delay between retries
+        retry-delay: 3s # Optional, only used if max-attempts > 1
