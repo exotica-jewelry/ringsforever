@@ -32,26 +32,23 @@ find . -name "*.html" -type f -print0 | xargs -0 perl -i -pe "s/\/index.html/\//
 
 to fix links to individual `index.html` files.
 
-5. Find and replace all links to `../index.html`, `../../index.html`, and
-`../../../index.html` with `/`, i.e. the home page. Note this must be done
-after the step above!
+5. Fix links to the home page -- note that this must be done after the step
+above!
+
+```sh
+find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/..\/index.html/\//g' && find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/..\/..\/index.html/\//g' && find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/..\/..\/..\/index.html/\//g'
+```
 
 6. Search for files that contain the text "Page has moved" or "No results" and
 redirect or remove these.
 
-7. Search and replace the default Search API meta description tag of:
+7. Replace the default Search API meta description tag:
 
-```
-Display all the products that are available, using Search API
-```
-
-with:
-
-```
-Our catalog of handcrafted titanium wedding rings.
+```sh
+find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/Display all the products that are available, using Search API/Our catalog of handcrafted titanium wedding rings./g'
 ```
 
-8. Search and remove two meta tags which are no longer valid:
+8. Remove two meta tags which are no longer valid:
 
 ```sh
 find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/<link rel="canonical" href="index.html" \/>//g' && find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/<link rel="shortlink" href="index.html" \/>//g'
