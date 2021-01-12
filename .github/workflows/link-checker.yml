@@ -11,8 +11,9 @@ on:
     - cron:  '0 0 1 1 *'
 
 env:
-  URL: https://titaniumringsforever.com
+  URL: https://titaniumringsforever.com/
   FILENAME: link-check.yaml
+  CONFIG: ''
 
 jobs:
   build:
