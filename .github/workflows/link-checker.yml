@@ -7,8 +7,6 @@ on:
   schedule:
     # Every Monday at 2:00 AM.
     - cron: '0 2 * * FRI'
-    # At midnight on Jan. 1 of every year.
-    - cron:  '0 0 1 1 *'
 
 jobs:
   build:
