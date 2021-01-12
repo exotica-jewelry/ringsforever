@@ -26,7 +26,7 @@ jobs:
         # Check the following URLs
         url: https://titaniumringsforever.com|https://www.titaniumringsforever.com|http://titaniumringsforever.com|http://www.titaniumringsforever.com
         # Verify TLS certificate, defaults to "no" (port and max-cert-days-left are only used if this is set to "yes")
-        check-cert: yes
+        check-cert: no
         # Port is only used with check-cert "yes", otherwise it can be included in the URL
         port: 443
         # Max number of days till cert expiration; if this value is reached, the check will fail
