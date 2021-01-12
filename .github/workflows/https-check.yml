@@ -26,7 +26,7 @@ jobs:
         # Check the following URLs
         url: https://titaniumringsforever.com|https://www.titaniumringsforever.com
         # Verify TLS certificate, defaults to "no" (port and max-cert-days-left are only used if this is set to "yes")
-        check-cert: yes
+        check-cert: no
         # Port is only used with check-cert "yes", otherwise it can be included in the URL
         port: 443
         # Max number of days till cert expiration; if this value is reached, the check will fail
@@ -51,7 +51,7 @@ jobs:
         # (only used with check-cert "yes")
         max-cert-days-left: 1
         # Follow redirects, or just report success on 3xx reponse status codes
-        follow-redirect: no # Optional, defaults to "no"
+        follow-redirect: yes # Optional, defaults to "no"
         # Fail this action after this many failed attempts
         max-attempts: 3 # Optional, defaults to 1
         # Delay between retries
