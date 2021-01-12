@@ -1,4 +1,4 @@
-name: Link Checker
+name: Link checker
 
 on:
   push:
@@ -13,7 +13,7 @@ on:
 env:
   URL: https://titaniumringsforever.com/
   FILENAME: link-check.yaml
-  CONFIG: ''
+  CONFIG: ./.github/actions/link-checker/config.json
 
 jobs:
   build:
@@ -29,5 +29,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: link-check
-          path: link-check.yaml
+          path: ./.github/actions/link-checker/results.yaml
           retention-days: 1
