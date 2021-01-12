@@ -18,8 +18,6 @@ jobs:
       with:
         node-version: '12'
     - run: npm install
-    - run: npm run build --if-present
-    - run: npm test
     # Install ncc dependency
     - run: npm i -g @vercel/ncc
     - name: Check the health and certificate date for the specified URL(s)
