@@ -1,18 +1,16 @@
 name: Sitemap submitter
 
 on:
-  workflow_run:
-    workflows: ["Sitemap generator"]
-    types:
-      - completed
+  pull_request:
+    branches:
+      - master
+    types: [closed]
 
 jobs:
-  build:
+  merge_job:
+    # see https://brennerm.github.io/posts/trigger-github-actions-on-pr-close.html
+    if: github.event.pull_request.merged == true && github.event.label.name == 'sitemap'
     runs-on: ubuntu-latest
-
-    # see https://github.community/t/workflow-run-completed-event-triggered-by-failed-workflow/128001
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-
     steps:
       - uses: actions/checkout@v2
       - name: Submit sitemap
