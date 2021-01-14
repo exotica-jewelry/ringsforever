@@ -3,6 +3,9 @@
 This is a flat export of the last stage of the Drupal site for
 [TitaniumRingsForever.com](https://titaniumringsforever.com).
 
+<!--ts-->
+<!--te-->
+
 ## Regeneration
 
 Should the site need to be regenerated, these are the steps:
