@@ -127,9 +127,9 @@ category pages, ring pages, the blog index and blog entries, and "about" pages.
 
 15. Ensure that HTTPS is still working properly.
 
-## GitHub Actions
+## Actions
 
-Several [Actions](https://docs.github.com/en/free-pro-team@latest/actions) are implemented.
+Several [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions) are implemented.
 
 ## Theming changes
 
