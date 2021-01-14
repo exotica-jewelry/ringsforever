@@ -3,6 +3,10 @@
 This is a flat export of the last stage of the Drupal site for
 [TitaniumRingsForever.com](https://titaniumringsforever.com).
 
+<!-- The following section, from "ts" to "te", is an automatically-generated
+  table of contents, updated whenever this file changes. Do not edit within
+  this section. -->
+
 <!--ts-->
    * [TitaniumRingsForever.com](#titaniumringsforevercom)
       * [Regeneration](#regeneration)
@@ -122,6 +126,10 @@ fixed in step 5 above.
 category pages, ring pages, the blog index and blog entries, and "about" pages.
 
 15. Ensure that HTTPS is still working properly.
+
+## Actions
+
+Several [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions) are implemented.
 
 ## Theming changes
 
