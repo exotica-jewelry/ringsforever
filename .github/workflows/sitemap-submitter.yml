@@ -1,22 +1,15 @@
 name: Sitemap submitter
 
 on:
+  push:
+    paths:
+      - 'sitemap.xml'
   pull_request:
-    types: [closed]
+    paths:
+      - 'sitemap.xml'
 
 jobs:
-  merge_job:
-    # see https://brennerm.github.io/posts/trigger-github-actions-on-pr-close.html
-    if: github.event.pull_request.merged == true && github.event.label.name == 'sitemap'
+  sitemap_changes:
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        echo PR #${{ github.event.number }} has been merged
-
-    # steps:
-    #   - uses: actions/checkout@v2
-    #   - name: Submit sitemap
-    #     id: submit-sitemap
-    #     uses: repetitive/actions/submit-sitemap@master
-    #     with:
-    #       agrs: https://www.titaniumringsforever.com/sitemap.xml
+      - run: sh -c "curl https://www.google.com/ping?sitemap=https://www.titaniumringsforever.com/sitemap.xml && curl https://www.bing.com/webmaster/ping.aspx?siteMap=https://www.titaniumringsforever.com/sitemap.xml"
