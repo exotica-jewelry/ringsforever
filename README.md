@@ -4,6 +4,15 @@ This is a flat export of the last stage of the Drupal site for
 [TitaniumRingsForever.com](https://titaniumringsforever.com).
 
 <!--ts-->
+   * [TitaniumRingsForever.com](#titaniumringsforevercom)
+      * [Regeneration](#regeneration)
+      * [Theming changes](#theming-changes)
+         * [CSS](#css)
+         * [HTML](#html)
+         * [JS](#js)
+
+<!-- Added by: runner, at: Thu Jan 14 03:09:42 UTC 2021 -->
+
 <!--te-->
 
 ## Regeneration
