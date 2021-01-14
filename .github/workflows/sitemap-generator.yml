@@ -31,3 +31,5 @@ jobs:
         commit_message: Automated sitemap update
         # Ensure we're only committing the sitemap, just in case.
         file_pattern: sitemap.xml
+    - name: Submit sitemap to Google and Bing
+      run: sh -c "curl https://www.google.com/ping?sitemap=https://www.titaniumringsforever.com/sitemap.xml && curl https://www.bing.com/webmaster/ping.aspx?siteMap=https://www.titaniumringsforever.com/sitemap.xml"
