@@ -11,10 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
-          chmod a+x gh-md-toc
-          ./gh-md-toc --insert --no-backup README.md
-          rm ./gh-md-toc
+          wget https://github.com/ekalinin/github-markdown-toc.go/releases/download/1.1.0/gh-md-toc.linux.amd64.tgz
+          $ tar xzvf gh-md-toc.linux.amd64.tgz
+          ./gh-md-toc --insert --no-backup --start-depth=2 README.md
+          rm ./gh-md-toc && rm gh-md-toc.linux.amd64.tgz
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automated update to README TOC
