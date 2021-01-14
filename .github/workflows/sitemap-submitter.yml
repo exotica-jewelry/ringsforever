@@ -10,9 +10,13 @@ jobs:
     if: github.event.pull_request.merged == true && github.event.label.name == 'sitemap'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Submit sitemap
-        id: submit-sitemap
-        uses: repetitive/actions/submit-sitemap@master
-        with:
-          agrs: https://www.titaniumringsforever.com/sitemap.xml
+    - run: |
+        echo PR #${{ github.event.number }} has been merged
+
+    # steps:
+    #   - uses: actions/checkout@v2
+    #   - name: Submit sitemap
+    #     id: submit-sitemap
+    #     uses: repetitive/actions/submit-sitemap@master
+    #     with:
+    #       agrs: https://www.titaniumringsforever.com/sitemap.xml
