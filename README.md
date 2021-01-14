@@ -129,6 +129,8 @@ commits, since if the site is exported again they may be overlooked.
 - https://github.com/exotica-jewelry/ringsforever/commit/cfb4c4d716b3721aede9eeb203d4fd978f19cf3a
 - https://github.com/exotica-jewelry/ringsforever/commit/94b62438cf3fbab18975bfc85dbea6df3f3effce
 - https://github.com/exotica-jewelry/ringsforever/commit/17f531c076606b76d8d77c31034f99addf0636bc
+- https://github.com/exotica-jewelry/ringsforever/commit/b3279a0b72be6281a4767da6c97b4776772112a3
+- https://github.com/exotica-jewelry/ringsforever/commit/6904aa7e4f3d712aef55e3359b19131551b130af
 
 ### JS
 
