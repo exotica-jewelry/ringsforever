@@ -6,7 +6,7 @@ This is a flat export of the last stage of the Drupal site for
   this section. -->
 
 <!--ts-->
-   * [TitaniumRingsForever.com](#titaniumringsforevercom)
+      * [License](#license)
       * [Regeneration](#regeneration)
       * [Actions](#actions)
       * [Theming changes](#theming-changes)
@@ -14,7 +14,7 @@ This is a flat export of the last stage of the Drupal site for
          * [HTML](#html)
          * [JS](#js)
 
-<!-- Added by: runner, at: Thu Jan 14 03:48:41 UTC 2021 -->
+<!-- Added by: runner, at: Tue Jan 19 23:37:19 UTC 2021 -->
 
 <!--te-->
 
