@@ -1,9 +1,12 @@
 name: Sitemap generator
 
 on:
-  push:
-    branches:
-      - master
+  # We force this workflow to wait until the TOC update has been generated so
+  # we don't get dueling autocommits.
+  workflow_run:
+    workflows: ["Markdown table of contents generator"]
+    types:
+      - completed
 
 jobs:
   build:
