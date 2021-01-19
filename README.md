@@ -140,7 +140,23 @@ category pages, ring pages, the blog index and blog entries, and "about" pages.
 
 ## Actions
 
-Several [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions) are implemented.
+Several
+[GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions) are
+implemented:
+
+- [Markdown table of contents
+generator](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22Markdown+table+of+contents+generator%22)
+updates the TOC in this readme file.
+- [Sitemap
+generator](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22Sitemap+generator%22)
+updates [sitemap.xml](sitemap.xml) if any files change, and submits the sitemap
+to Google and Bing.
+- [HTTPS
+checker](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22HTTPS+checker%22)
+verifies that the website is being served via HTTPS correctly.
+- [Link
+checker](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22Link+checker%22)
+verifies all outbound links from the website.
 
 ## Theming changes
 
