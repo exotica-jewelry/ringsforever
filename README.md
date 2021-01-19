@@ -20,7 +20,7 @@ This is a flat export of the last stage of the Drupal site for
 
 ## License
 
-All content, images, and designs ©1995–2021 by Exotica Jewelry, Inc.
+All content, images, and designs copyright Exotica Jewelry, Inc.
 
 Exotica, Exotica Jewelry and TitaniumRingsForever.com names and logos are
 registered trademarks. All rights reserved.
