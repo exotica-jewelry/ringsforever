@@ -6,19 +6,9 @@ This is a flat export of the last stage of the Drupal site for
   this section. -->
 
 <!--ts-->
-      * [License](#license)
-      * [Regeneration](#regeneration)
-      * [Actions](#actions)
-      * [Theming changes](#theming-changes)
-         * [CSS](#css)
-         * [HTML](#html)
-         * [JS](#js)
-
-<!-- Added by: runner, at: Tue Jan 19 23:51:19 UTC 2021 -->
-
 <!--te-->
 
-## License
+# License
 
 All content, images, and designs copyright Exotica Jewelry, Inc.
 
@@ -30,7 +20,7 @@ This site was originally exported from Drupal 7, consequently the license for
 GPLv2+. The license for all other code in this project is GPLv3, as described
 in [LICENSE.txt](LICENSE.txt), except where noted by other included code.
 
-## Regeneration
+# Regeneration
 
 Should the site need to be regenerated, these are the steps:
 
@@ -138,37 +128,40 @@ category pages, ring pages, the blog index and blog entries, and "about" pages.
 
 15. Ensure that HTTPS is still working properly.
 
-## Actions
+# Actions
 
 Several
 [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions) are
-implemented:
+implemented. Hierarchy below represents dependencies, in order to avoid dueling
+autocommits.
 
-- [Markdown table of contents
-generator](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22Markdown+table+of+contents+generator%22)
-updates the TOC in this readme file.
-- [Sitemap
-generator](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22Sitemap+generator%22)
-updates [sitemap.xml](sitemap.xml) if any files change, and submits the sitemap
-to Google and Bing.
 - [HTTPS
 checker](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22HTTPS+checker%22)
-verifies that the website is being served via HTTPS correctly.
+verifies that the website is being served via HTTPS correctly. This is really
+just a might-as-well check, as HTTPS should have nothing to do with a git update
+to the code.
 - [Link
 checker](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22Link+checker%22)
 verifies all outbound links from the website.
+- [Markdown table of contents
+generator](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22Markdown+table+of+contents+generator%22)
+updates the TOC in this readme file.
+  - [Sitemap
+generator](https://github.com/exotica-jewelry/ringsforever/actions?query=workflow%3A%22Sitemap+generator%22)
+updates [sitemap.xml](sitemap.xml) if any files change, and submits the sitemap
+to Google and Bing.
 
-## Theming changes
+# Theming changes
 
 All CSS, HTML and JS theming changes should be recorded here as a list of
 commits, since if the site is exported again they may be overlooked.
 
-### CSS
+## CSS
 - https://github.com/exotica-jewelry/ringsforever/commit/5ff19fead40dde04260270b904c16e1686a3bede
 - https://github.com/exotica-jewelry/ringsforever/commit/89813b1c631970de1799981400063d494d876a94
 - https://github.com/exotica-jewelry/ringsforever/commit/d5935e451361fd2e4000ed2b2d95604b56a189b1
 
-### HTML
+## HTML
 - https://github.com/exotica-jewelry/ringsforever/commit/15e3cb007a3bf22f4efd59b5382ea2b39b1f25d6
 - https://github.com/exotica-jewelry/ringsforever/commit/f8424387af80151bd89e0b37f80c51c163e065e7
 - https://github.com/exotica-jewelry/ringsforever/commit/2594bd83a9b4193fc6ad8e5fc0c1f49290226de5
@@ -180,6 +173,6 @@ commits, since if the site is exported again they may be overlooked.
 - https://github.com/exotica-jewelry/ringsforever/commit/6904aa7e4f3d712aef55e3359b19131551b130af
 - https://github.com/exotica-jewelry/ringsforever/commit/8e67d3823aedac384506f7c655e246eae7810286
 
-### JS
+## JS
 
 - None so far.
