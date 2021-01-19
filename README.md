@@ -1,5 +1,3 @@
-# TitaniumRingsForever.com
-
 This is a flat export of the last stage of the Drupal site for
 [TitaniumRingsForever.com](https://titaniumringsforever.com).
 
@@ -19,6 +17,18 @@ This is a flat export of the last stage of the Drupal site for
 <!-- Added by: runner, at: Thu Jan 14 03:48:41 UTC 2021 -->
 
 <!--te-->
+
+## License
+
+All content, images, and designs ©1995–2021 by Exotica Jewelry, Inc.
+
+Exotica, Exotica Jewelry and TitaniumRingsForever.com names and logos are
+registered trademarks. All rights reserved.
+
+This site was originally exported from Drupal 7, consequently the license for
+[all code originating from Drupal](https://www.drupal.org/about/licensing) is
+GPLv2+. The license for all other code in this project is GPLv3, as described
+in [LICENSE.txt](LICENSE.txt), except where noted by other included code.
 
 ## Regeneration
 
