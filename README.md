@@ -6,6 +6,16 @@ This is a flat export of the last stage of the Drupal site for
   this section. -->
 
 <!--ts-->
+   * [License](#license)
+   * [Regeneration](#regeneration)
+   * [Actions](#actions)
+   * [Theming changes](#theming-changes)
+      * [CSS](#css)
+      * [HTML](#html)
+      * [JS](#js)
+
+<!-- Added by: runner, at: Wed Jan 20 00:01:14 UTC 2021 -->
+
 <!--te-->
 
 # License
