@@ -7,11 +7,14 @@ on:
 jobs:
   screenshot:
     name: Screenshot
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
     - name: Screenshot website
       uses: swinton/screenshot-website@v1.x
       with:
         source: https://www.titaniumringsforever.com/
-        destination: screenshot.png
+        destination: screenshot-${{ matrix.os }}.png
         full-page: true
