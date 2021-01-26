@@ -16,4 +16,5 @@ jobs:
       uses: swinton/screenshot-website@v1.x
       with:
         source: https://www.titaniumringsforever.com/
-        destination: _screenshots/screenshot-${{ matrix.os }}-${{ matrix.width }}.png
+        destination: _screenshots/screenshot-${{ matrix.os }}.png
+        full-page: true
