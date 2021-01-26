@@ -17,5 +17,6 @@ jobs:
       with:
         source: https://www.titaniumringsforever.com/
         destination: screenshot-${{ matrix.width }}.png
+        delay: 10 # seconds
         width: ${{ matrix.width }}
         full-page: true
