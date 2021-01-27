@@ -22,7 +22,7 @@ jobs:
     - name: Download artifacts
       uses: actions/download-artifact@v2
       with:
-        path: report
+        path: _reports/lighthouse-audit
     - name: Move HTML report into place
       run: mv report/*.html _reports/ && rm -rf report
     - name: Commit report
