@@ -24,6 +24,3 @@ jobs:
         path: screenshots
     - name: Upload screenshots as an artifact
       uses: actions/upload-artifact@master
-      with:
-        name: screenshots
-        path: screenshots
