@@ -25,7 +25,7 @@ jobs:
         name: report
         path: './report'
     - name: Move HTML report into place
-      run: mkdir _reports && mv report/*.html _reports/ && rm -rf report
+      run: mv report/*.html _reports/ && rm -rf report
     - name: Commit report
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
