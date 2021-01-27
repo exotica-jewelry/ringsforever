@@ -4,9 +4,6 @@ on: push
 jobs:
   screenshot:
     name: Screenshot
-    strategy:
-      matrix:
-        width: [1200, 992, 768, 600]
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the repo
@@ -16,10 +13,10 @@ jobs:
     - name: Screenshot website
       uses: swinton/screenshot-website@v1.x
       with:
+        name: screenshots
         source: https://www.titaniumringsforever.com/
-        destination: screenshot-${{ matrix.width }}.png
+        destination: screenshot.png
         delay: 10 # seconds
-        width: ${{ matrix.width }}
         full-page: true
         path: screenshots
     - name: Download artifacts
@@ -30,3 +27,7 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Automated screenshots of website
+    - name: Delete artifacts
+      uses: geekyeggo/delete-artifact@v1
+      with:
+        name: screenshots
