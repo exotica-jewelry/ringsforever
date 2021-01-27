@@ -20,3 +20,19 @@ jobs:
         delay: 10 # seconds
         width: ${{ matrix.width }}
         full-page: true
+    - name: Upload screenshots as an artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: screenshots
+    - name: Download artifacts
+      uses: actions/download-artifact@v2
+      with:
+        path: _reports/screenshots
+    - name: Commit report
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Automated screenshots of website
+    - name: Delete artifacts
+      uses: geekyeggo/delete-artifact@v1
+      with:
+        name: screenshots
