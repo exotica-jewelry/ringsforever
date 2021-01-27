@@ -24,7 +24,7 @@ jobs:
       with:
         path: _reports/lighthouse-audit
     - name: Move HTML report into place
-      run: mv report/*.html _reports/ && rm -rf report
+      run: mv _reports/lighthouse-audit/report/*.html _reports/lighthouse-audit && rm -rf _reports/lighthouse-audit/report
     - name: Commit report
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
