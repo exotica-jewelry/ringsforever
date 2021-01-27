@@ -16,18 +16,15 @@ jobs:
     - name: Upload results as an artifact
       uses: actions/upload-artifact@master
       with:
-        name: _reports
-        path: './_reports/lighthouse-audit'
+        name: report
+        path: './report'
     - name: Download artifacts
       uses: actions/download-artifact@v2
-      with:
-        path: './_reports/lighthouse-audit'
     - name: Commit report
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Automated Google Lighthouse audit
-        file_pattern: '_reports/**'
     - name: Delete artifacts
       uses: geekyeggo/delete-artifact@v1
       with:
-        name: _reports
+        name: report
