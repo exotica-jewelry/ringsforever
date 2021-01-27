@@ -26,3 +26,9 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Automated Google Lighthouse audit
+        # We only want the HTML.
+        file_pattern: https___www_titaniumringsforever_com_.report.html
+    - name: Delete artifacts
+      uses: geekyeggo/delete-artifact@v1
+      with:
+        name: report
