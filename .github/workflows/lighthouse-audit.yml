@@ -22,7 +22,8 @@ jobs:
     - name: Download artifacts
       uses: actions/download-artifact@v2
       with:
-        path: report
+        name: report
+        path: './report'
     - name: Move HTML report into place
       run: mkdir _reports && mv report/*.html _reports/ && rm -rf report
     - name: Commit report
