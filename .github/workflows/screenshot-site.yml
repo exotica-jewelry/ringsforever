@@ -22,5 +22,7 @@ jobs:
         width: ${{ matrix.width }}
         full-page: true
         path: screenshots
-    - name: Upload screenshots as an artifact
-      uses: actions/upload-artifact@master
+    - name: Download artifacts
+      uses: actions/download-artifact@v2
+      with:
+        path: _reports/screenshots
