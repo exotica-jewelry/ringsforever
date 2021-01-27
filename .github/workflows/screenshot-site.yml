@@ -1,8 +1,5 @@
 name: Screenshot the website
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
   screenshot:

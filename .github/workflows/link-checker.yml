@@ -3,7 +3,7 @@ name: Link checker
 on:
   push:
     branches:
-      - master
+      - '**'
   schedule:
     # Every Monday at 2:00 AM.
     - cron: '0 2 * * MON'

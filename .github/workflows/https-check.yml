@@ -3,7 +3,7 @@ name: HTTPS checker
 on:
   push:
     branches:
-      - master
+      - '**'
   schedule:
     # Every Monday at 3:00 AM.
     - cron: '0 3 * * MON'
