@@ -9,6 +9,10 @@ jobs:
         width: [1200, 992, 768, 600]
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Screenshot website
       uses: swinton/screenshot-website@v1.x
       with:
@@ -17,3 +21,8 @@ jobs:
         delay: 10 # seconds
         width: ${{ matrix.width }}
         full-page: true
+    - name: Upload screenshots as an artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: screenshots
+        path: '.'
