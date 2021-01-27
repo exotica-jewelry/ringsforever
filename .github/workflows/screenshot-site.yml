@@ -26,3 +26,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         path: _reports/screenshots
+    - name: Commit screenshots
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Automated screenshots of website
