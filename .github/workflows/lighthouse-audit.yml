@@ -17,7 +17,7 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: report
-        path: '.'
+        path: './report'
     - name: Download artifacts
       uses: actions/download-artifact@v2
       with:
