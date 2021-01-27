@@ -21,6 +21,7 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: screenshots
+        path: '.'
     - name: Download artifacts
       uses: actions/download-artifact@v2
       with:
