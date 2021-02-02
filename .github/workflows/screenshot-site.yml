@@ -4,10 +4,7 @@ on: push
 jobs:
   screenshot:
     name: Screenshot
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout the repo
       uses: actions/checkout@v2
@@ -18,7 +15,7 @@ jobs:
       with:
         name: screenshot
         source: https://www.titaniumringsforever.com/
-        destination: screenshot-${{ matrix.os }}.png
+        destination: screenshot.png
         delay: 10 # seconds
         full-page: true
     - name: Download artifacts
