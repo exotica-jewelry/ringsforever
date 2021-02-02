@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Report broken links
-        uses: urlstechie/urlchecker-action@0.2.1
+        uses: urlstechie/urlchecker-action@master
         with:
           # A comma-separated list of file types to cover in the URL checks
           file_types: .html
@@ -28,4 +28,4 @@ jobs:
           # Choose whether to include files with no URLs in the output
           print_all: false
           # A comma separated patterns to exclude during URL checks
-          white_listed_patterns: http://www.w3.org,http://schema.org/,http://purl.org,http://ogp.me,http://rdfs.org,http://xmlns.com,http://drupal.org,https://drupal.org,https://formsubmit.co,https://www.facebook.com,https://brick.a.ssl.fastly.net,https://ajax.googleapis.com,https://titanium.org
+          exclude_patterns: http://www.w3.org,http://schema.org/,http://purl.org,http://ogp.me,http://rdfs.org,http://xmlns.com,http://drupal.org,https://drupal.org,https://formsubmit.co,https://www.facebook.com,https://brick.a.ssl.fastly.net,https://ajax.googleapis.com,https://titanium.org
