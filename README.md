@@ -164,7 +164,7 @@ to Google and Bing.
 # Theming changes
 
 All CSS, HTML and JS theming changes should be recorded here as a list of
-commits, since if the site is exported again they may be overlooked.
+commits, since if the site is exported again they may be overlooked. 
 
 ## CSS
 - https://github.com/exotica-jewelry/ringsforever/commit/5ff19fead40dde04260270b904c16e1686a3bede
